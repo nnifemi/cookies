@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nifemi Leye">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/index.css" media="all">
+    <title>Cookies</title>
+</head>
+<body>
+    <main>
+        <div id="main-content" class="container">
+            <p>
+                A <span id="red">cookie</span> is a small piece of text sent to your browser by a website you
+                visit.
+                It helps the site remember <span id="blue">information</span> about your visit, which can make it
+                easier
+                to visit the site again and make the site more <span id="yellow">useful</span>
+            </p>
+        </div>
+    </main>
+
+    <div id="cookie-dialog" class="dialog-box">
+        <p>
+            We use cookies to improve your experience on our website. By clicking "Accept",
+            you agree to the use of cookies for marketing and analytics purposes.
+            <button class="accept-all" onclick="acceptAllCookies()">Accept</button>
+            <button class="settings" onclick="showCookieSettingsDialog()">Settings</button>
+        </p>
+    </div>
+
+    <div id="cookieSettings" class="dialog-box">
+        <label class="switch">
+            <input type="checkbox" checked id="screenWidthCheckbox"> Screen Width
+            <span class="slider round"></span>
+        </label>
+    
+        <label class="switch">
+            <input type="checkbox" checked id="screenHeightCheckbox"> Screen Height
+            <span class="slider round"></span>
+        </label>
+        <button id="saveSettings" onclick="saveCookieSettings()">Save Settings</button>
+    </div>
+
+    <input type="checkbox" checked id="browserCheckbox">
+    <input type="checkbox" checked id="osCheckbox">
+    <input type="checkbox" checked id="screenCheckbox">
+    <input type="checkbox" checked id="screenHeightCheckbox">
+    <input type="checkbox" checked id="screenWidthCheckbox">
+
+    <div id="Browser"></div>
+    <div id="pageW"></div>
+    <div id="pageH"></div>
+    <div id="pageO"></div>
+    <script src="./assets/script/index.js" type="module"></script>
+</body>
+</html>
