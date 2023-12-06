@@ -1,8 +1,5 @@
 'use strict';
 
-// Clear the console by default
-console.clear();
-
 const cookieDialog = document.getElementById('cookie-dialog');
 const cookieSettings = document.getElementById('cookieSettings');
 const acceptAllButton = document.getElementById('acceptAll');
