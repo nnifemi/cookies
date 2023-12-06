@@ -42,8 +42,8 @@ function showCookieSettingsDialog() {
                 <input type="checkbox" checked id="browserCheckbox"> Browser Information
                 <span class="slider round"></span>
             </label>
-            <label class="switch">
-                <input type="checkbox" checked id="osCheckbox"> Operating System
+            <label class="switch"> Operating System
+                <input type="checkbox" checked id="osCheckbox">
                 <span class="slider round"></span>
             </label>
             <label class="switch">
@@ -263,7 +263,6 @@ function displaySettingsInfo() {
     const infoContainer = document.getElementById('settingsInfo');
     const browserCheckbox = document.getElementById('browserCheckbox').checked;
     const osCheckbox = document.getElementById('osCheckbox').checked;
-    const screenCheckbox = document.getElementById('screenCheckbox').checked;
     const screenHeightCheckbox = document.getElementById('screenHeightCheckbox').checked;
     const screenWidthCheckbox = document.getElementById('screenWidthCheckbox').checked;
 
