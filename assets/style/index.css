@@ -194,3 +194,7 @@ button.settings {
     filter: brightness(90%);
 }
 
+#saveSettings {
+    position: relative;
+    margin-left: 60px;
+}
