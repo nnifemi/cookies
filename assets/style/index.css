@@ -108,7 +108,6 @@ button.settings {
     transition: .4s;
   }
 
-
   .slider:before {
     position: absolute;
     content: "";
@@ -144,19 +143,12 @@ button.settings {
     border-radius: 50%;
   }
 
-  label {
-    position: absolute;
-    
-  }
-
 .slider-group {
-    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 35px;
     width: 200px;
     height: 200px; 
-    margin-right: 20px;
 }
 
 #cookie-dialog button {
@@ -167,7 +159,7 @@ button.settings {
 #cookie-dialog button {
     position: relative;
     top: 6vh;
-    right: 33vh;
+    right: 32vh;
     margin: 5px;
     padding: 10px;
     border-radius: 20px;
